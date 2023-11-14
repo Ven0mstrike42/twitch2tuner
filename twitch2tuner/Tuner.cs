@@ -147,7 +147,7 @@ namespace twitch2tuner
                     else
                     {
                         // Get and save the URL for this streamer/stream start time
-                        streamUrl = StreamUrlMap[channel.LiveStreamId] = streamDiscoveryUtility.GetStreamUrl($"twitch.tv/{channel.UserName}");
+                        streamUrl = StreamUrlMap[channel.LiveStreamId] = streamDiscoveryUtility.GetStreamUrl($"eu.luminous.dev/live/{channel.UserName}");
 
                         ($"No cached stream URL for streamer {channel.DisplayName} with stream starting at {channel.LiveStreamStartedDateTime} and stream ID {channel.LiveStreamId}. " +
                          $"Found new URL: {streamUrl}")
